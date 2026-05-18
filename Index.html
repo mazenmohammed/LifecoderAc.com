@@ -1,0 +1,261 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتالوج Life Coder Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.260.0/umd/lucide.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        life: {
+                            teal: '#17a2b8', // لون كلمة CODER تقريباً
+                            green: '#4CAF50', // لون شريط ENTHUSIASTC² تقريباً
+                            dark: '#1a1a1a', // أسود الشعار الداكن
+                            gray: '#f0f0f0'  // رمادي الخلفية الفاتح
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #1a1a1a; /* خلفية داكنة لعكس الشعار */
+            color: #f8fafc;
+        }
+        .logo-font {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .teal-accent {
+            color: #17a2b8;
+        }
+        .green-accent {
+            color: #4CAF50;
+        }
+        .card-bg {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(23, 162, 184, 0.3);
+            backdrop-filter: blur(5px);
+        }
+        .neon-teal {
+            text-shadow: 0 0 10px rgba(23, 162, 184, 0.5);
+        }
+        .neon-green {
+            text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="py-12 px-6 text-center relative overflow-hidden border-b-4 border-life-teal">
+        <div class="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+            <!-- محاكاة تصميم الشعار بشكل تقريبي للنص -->
+            <div class="mb-6 logo-font relative">
+                <h2 class="text-5xl font-black text-white tracking-tighter relative z-10">LIFE</h2>
+                <h1 class="text-7xl font-black teal-accent tracking-tighter -mt-4 relative z-10 neon-teal">CODER</h1>
+                <div class="bg-life-green text-life-dark font-bold text-sm px-4 py-1 mt-2 rounded-sm inline-block transform -skew-x-12 border-2 border-life-dark neon-green relative z-10">
+                    ENTHUSIASTC²
+                </div>
+                <!-- خلفية رمادية للشعار -->
+                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[140%] bg-life-gray opacity-10 rounded-3xl z-0 blur-md"></div>
+            </div>
+
+            <p class="text-lg md:text-xl max-w-2xl mx-auto text-slate-300 leading-relaxed font-semibold mt-4">
+                نبني عقلية برمجية قوية ونؤهل الشباب لسوق العمل من خلال مسارات تعليمية احترافية وممتعة.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-16 flex-grow">
+        
+        <!-- Section Title -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white inline-block relative">
+                البرامج الأساسية
+                <span class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-2 bg-life-teal rounded-full neon-teal"></span>
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            
+            <!-- Program 1: التأسيس الشامل -->
+            <div class="card-bg rounded-3xl overflow-hidden hover:shadow-[0_0_20px_rgba(23,162,184,0.3)] transition-shadow duration-300">
+                <div class="p-8 border-b border-life-teal/30 flex flex-col items-start gap-4 bg-life-teal/10">
+                    <div class="bg-life-teal text-life-dark p-4 rounded-2xl border-2 border-life-dark">
+                        <i data-lucide="blocks" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2 neon-teal">التأسيس الشامل</h3>
+                        <span class="inline-block bg-life-teal/20 text-life-teal text-sm font-bold px-3 py-1 rounded-full border border-life-teal/40">من 4 ابتدائي حتى 1 إعدادي</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-300 mb-8 font-semibold leading-relaxed">
+                        يهدف هذا البرنامج إلى بناء العقلية البرمجية وتأسيس الطفل تكنولوجياً بخطوات علمية وممتعة تفاعلية.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-life-teal/20">
+                            <i data-lucide="gamepad-2" class="w-5 h-5 teal-accent"></i>
+                            <span class="text-slate-200 font-semibold text-sm">برمجة الألعاب التفاعلية (Scratch)</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-life-teal/20">
+                            <i data-lucide="bot" class="w-5 h-5 teal-accent"></i>
+                            <span class="text-slate-200 font-semibold text-sm">تطبيقات الذكاء الاصطناعي (PictoBlox)</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-life-teal/20">
+                            <i data-lucide="file-code-2" class="w-5 h-5 teal-accent"></i>
+                            <span class="text-slate-200 font-semibold text-sm">أساسيات لغة بايثون (Python)</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-life-teal/20">
+                            <i data-lucide="layout-template" class="w-5 h-5 teal-accent"></i>
+                            <span class="text-slate-200 font-semibold text-sm">تصميم المواقع الإلكترونية</span>
+                        </li>
+                        <li class="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-life-teal/20">
+                            <i data-lucide="cpu" class="w-5 h-5 teal-accent"></i>
+                            <span class="text-slate-200 font-semibold text-sm">أساسيات الشبكات، الهاردوير والسوفتوير</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Program 2: التكوين المهني -->
+            <div class="card-bg rounded-3xl overflow-hidden hover:shadow-[0_0_20px_rgba(76,175,80,0.3)] transition-shadow duration-300 border-life-green/50 relative">
+                <div class="absolute top-0 left-0 bg-life-green text-life-dark text-xs font-bold px-4 py-2 rounded-br-xl z-10 border-r-2 border-b-2 border-life-dark">
+                    متقدم
+                </div>
+                <div class="p-8 border-b border-life-green/30 flex flex-col items-start gap-4 bg-life-green/10">
+                    <div class="bg-life-green text-life-dark p-4 rounded-2xl border-2 border-life-dark">
+                        <i data-lucide="briefcase" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-2 neon-green">A1 Youth (التكوين المهني)</h3>
+                        <span class="inline-block bg-life-green/20 text-life-green text-sm font-bold px-3 py-1 rounded-full border border-life-green/40">من 2 إعدادي فما فوق</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <p class="text-slate-300 mb-8 font-semibold leading-relaxed">
+                        برنامج مكثف لتأهيل الشباب لسوق العمل وبناء مهندس برمجيات محترف يمتلك سيرة ذاتية (CV) قوية جداً.
+                    </p>
+                    
+                    <div class="relative border-r-2 border-life-green/50 pr-6 space-y-6 before:absolute before:inset-0 before:ml-2 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-life-green/50 before:to-transparent">
+                        
+                        <div class="relative group">
+                            <div class="absolute w-4 h-4 bg-life-green rounded-full -right-[31px] top-1 outline outline-4 outline-life-dark group-hover:shadow-[0_0_10px_#4CAF50] transition-shadow"></div>
+                            <h4 class="text-white font-bold text-sm mb-1">مراجعة سريعة (Scratch)</h4>
+                            <p class="text-slate-400 text-xs font-semibold">تأكيد المفاهيم البرمجية الأساسية.</p>
+                        </div>
+
+                        <div class="relative group">
+                            <div class="absolute w-4 h-4 bg-life-green rounded-full -right-[31px] top-1 outline outline-4 outline-life-dark group-hover:shadow-[0_0_10px_#4CAF50] transition-shadow"></div>
+                            <h4 class="text-white font-bold text-sm mb-1">التأسيس القوي بلغة (C)</h4>
+                            <p class="text-slate-400 text-xs font-semibold">تعلم أسس البرمجة الهيكلية.</p>
+                        </div>
+
+                        <div class="relative group">
+                            <div class="absolute w-4 h-4 bg-life-green rounded-full -right-[31px] top-1 outline outline-4 outline-life-dark group-hover:shadow-[0_0_10px_#4CAF50] transition-shadow"></div>
+                            <h4 class="text-white font-bold text-sm mb-1">هياكل البيانات و (OOP)</h4>
+                            <p class="text-slate-400 text-xs font-semibold">Data Structures & Object Oriented.</p>
+                        </div>
+
+                        <div class="relative group">
+                            <div class="absolute w-4 h-4 bg-life-green rounded-full -right-[31px] top-1 outline outline-4 outline-life-dark group-hover:shadow-[0_0_10px_#4CAF50] transition-shadow"></div>
+                            <h4 class="text-white font-bold text-sm mb-1">الخوارزميات (Algorithms)</h4>
+                            <p class="text-slate-400 text-xs font-semibold">تطوير مهارات حل المشكلات البرمجية.</p>
+                        </div>
+
+                        <div class="relative group">
+                            <div class="absolute w-4 h-4 bg-life-green rounded-full -right-[31px] top-1 outline outline-4 outline-life-dark group-hover:shadow-[0_0_10px_#4CAF50] transition-shadow"></div>
+                            <h4 class="text-white font-bold text-sm mb-1">قواعد البيانات (Databases)</h4>
+                            <p class="text-slate-400 text-xs font-semibold">تصميم وإدارة البيانات.</p>
+                        </div>
+
+                        <div class="relative">
+                            <div class="absolute w-5 h-5 bg-life-teal rounded-full -right-[33px] top-0.5 outline outline-4 outline-life-dark shadow-[0_0_15px_#17a2b8] animate-pulse"></div>
+                            <h4 class="text-life-teal font-black text-base mb-1 neon-teal">تطبيقات الموبايل (Flutter)</h4>
+                            <p class="text-slate-300 text-sm font-bold">المرحلة النهائية: بناء تطبيقات احترافية.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Online System Section -->
+        <div class="card-bg rounded-3xl p-8 md:p-12 border-life-teal/50 relative overflow-hidden bg-gradient-to-br from-life-dark to-life-teal/10">
+            
+            <div class="max-w-3xl mx-auto text-center relative z-10">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-life-teal text-life-dark mb-6 border-2 border-life-dark shadow-[0_0_15px_#17a2b8]">
+                    <i data-lucide="laptop" class="w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl font-bold mb-6 text-white neon-teal">نظام الدراسة (أونلاين تفاعلي)</h2>
+                <p class="text-slate-300 text-lg mb-8 leading-relaxed font-semibold">
+                    حرصاً منا على توفير أفضل تجربة تعليمية مرنة، نقدم جميع برامجنا عبر الإنترنت لتتعلم من أي مكان بكل سهولة، مع الحفاظ على أعلى درجات التفاعل المباشر.
+                </p>
+                
+                <div class="grid sm:grid-cols-3 gap-4 text-right">
+                    <div class="bg-white/5 p-5 rounded-2xl border border-life-teal/30 flex flex-col items-center text-center gap-3 hover:bg-white/10 transition-colors">
+                        <i data-lucide="calendar-clock" class="w-8 h-8 teal-accent"></i>
+                        <h4 class="text-white font-bold">مرونة في المواعيد</h4>
+                        <p class="text-slate-400 text-sm">مواعيد متاحة على مدار الأسبوع تناسب الجميع.</p>
+                    </div>
+                    <div class="bg-white/5 p-5 rounded-2xl border border-life-teal/30 flex flex-col items-center text-center gap-3 hover:bg-white/10 transition-colors">
+                        <i data-lucide="users" class="w-8 h-8 teal-accent"></i>
+                        <h4 class="text-white font-bold">مجموعات أو فردي</h4>
+                        <p class="text-slate-400 text-sm">اختر بين الانضمام لمجموعة أو جلسات (1-to-1) خاصة.</p>
+                    </div>
+                    <div class="bg-life-green/10 p-5 rounded-2xl border border-life-green/40 flex flex-col items-center text-center gap-3 hover:bg-life-green/20 transition-colors">
+                        <i data-lucide="rocket" class="w-8 h-8 green-accent"></i>
+                        <h4 class="text-life-green font-bold neon-green">الحجز متاح الآن</h4>
+                        <p class="text-slate-300 text-sm">يمكنك تحديد مستواك والبدء في الكورس فوراً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t-4 border-life-green py-12 mt-8 bg-[#111]">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-white mb-6">تواصل معنا للحصول على خدمات برمجية مخصصة</h3>
+            
+            <div class="flex flex-col items-center gap-6">
+                <!-- رقم الهاتف -->
+                <a href="tel:+201003138425" class="flex items-center gap-3 text-2xl font-bold text-white hover:text-life-green transition-colors dir-ltr">
+                    <i data-lucide="phone-call" class="w-8 h-8 teal-accent"></i>
+                    <span class="tracking-widest">+20 100 313 8425</span>
+                </a>
+
+                <!-- زر الواتساب -->
+                <a href="https://wa.me/201003138425" target="_blank" class="bg-life-green hover:bg-green-600 text-life-dark font-bold py-4 px-10 rounded-full inline-flex items-center gap-3 transition-all hover:scale-105 shadow-[0_0_20px_rgba(76,175,80,0.5)] border-2 border-life-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                    تواصل معنا عبر واتساب
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+```
+
